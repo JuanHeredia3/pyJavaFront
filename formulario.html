@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer formulario</title>
+</head>
+<body>
+    <h1 style="color: red;"> Mi primer formulario </h1>
+
+    <form action="" method="get">
+        <label for="Nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" required> 
+
+        <br><br>
+
+        <label for="Apellido">Apellido</label>
+        <input type="text" name="apellido" id="apellido" required>
+
+        <br><br>
+
+        <label for="Contraseña">Contraseña</label>
+        <input type="password" name="pass" id="pass" required>
+
+        <br><br>
+
+        <label for="Fecha de Nacimiento">Fecha de Nacimiento</label>
+        <input type="date" name="date" id="date" required>
+
+        <br><br>
+
+        <label for="selec">Seleccione provincia de nacimiento:</label>
+        <br><br>
+        <select name="provincia" id="provincia">
+            <option value="1">Buenos Aires</option>
+            <option value="2">Córdoba</option>
+            <option value="3">Santa Fe</option>
+
+        </select>
+
+        <br><br>
+
+        <label for="empleo">Empleo:</label>
+        <br><br>
+        <input type="radio" name="empleo" id="" value="1">Actualmente me encuentro empleado
+        <input type="radio" name="empleo" id="" value="2">Desempleado
+
+        <br><br>
+
+        <label for="mascota">Seleccione sus mascotas:</label>
+        <br>
+        <input type="checkbox" name="mascota1" id="">Perro
+        <br>
+        <input type="checkbox" name="mascota2" id="">Gato
+        <br>
+        <input type="checkbox" name="mascota3" id="">Hámster
+
+        <br><br>
+
+        <label for="obvs">Observaciones:</label>
+        <br><br>
+        <textarea name="obsev" id="obsev" cols="50" rows="10"></textarea>
+
+        <br><br>
+
+        <input type="submit" value="Enviar">
+
+
+    </form>
+</body>
+</html>

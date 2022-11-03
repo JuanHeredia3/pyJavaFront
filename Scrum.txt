@@ -1,0 +1,373 @@
+Scrum
+
+Scrum es un marco de trabajo para el desarrollo y el manteniemiento de productos-complejos. Consiste en Roles, Event, Artifacs y Rules. Keri Schwaber y Jeff Sutherland desarrollaron esta metodología ágil.
+
+-- Definición --
+
+Es un marco de trabajo a través del cual las personas pueden abordar problemas complejos adaptativos uqe, a su vez, se entregan productos de forma eficientey creativa con el máximo valor.
+
+Es liegro, simple de entender pero difícil de dominar.
+
+Scrum muestra la eficacia relativa de las técnicas de gestión de producto y de trabajo de modo que podemos continuamente mejorar el producto, el equipo y el entorno de trabajo.
+
+El marco de trabajo de Scrum se compone por los Equipos Scrum, sus Roles, Eventos, Artefactos y Reglas asociadas. Cada componente sirve a un propósito específico y es esencial para el éxito de Scrum y para su uso.
+
+Las Reglas de Scrum relacionan los roles, eventos y artefactos, gobernando las relaciones e interacciones entre ellos.
+
+
+-- Usos de Scrum -- 
+
+1- Investigar e identificar los mercados viables, tecnologías y capacidades.
+
+2- Desarrollo de productos y mejoras.
+
+3- Lanzamiento de productos y mejoras diarimante tantas veces como sea posible.
+
+4- Desarrollo y mantenimiento en la Nube y otros entornos operacionales de desarrollo para el uso de producto
+
+5- Mantenimiento y renovación de productos.
+
+La esencia de Scrum es pequeños equipos de personas. El equipo indicidualmente es muy flexible y adaptativo.
+
+-- Teoría de Scrum --
+
+Scrum se basa en la teoría de control de procesos empírica o empirismo. Éste asegura que el conocimiento procede de la experiencia y en poder tomar decisiones basándose en lo conocido. Scrum emplea un enfoque iterativo e incremental para optimizar la predictibilidad y el contro del riesgo.
+
+
+Existen tres pilares que soportan toda la implementación del control de porcesos empírico:
+
+-Trasparencia:
+
+Los aspectos significativos del proceso deben ser visibles para todos aquellos que son responsables del resultado. La transparencia requiere que dichos aspectos sean definidos en base a un estándar común, de tal modo que los observadores compartan un entendimiento común de lo que se están viendo.
+
+-Inspección:
+
+Los usuarios de Scrum deben inspeccionar frecuentemente los Artefactos de Scrum y el progreso hacia un objetivo para detectar variaciones indeseadas.
+
+-Adaptación:
+
+El proceso o el material que está siendo procesado deberá ajustarse en el caso que un inspector lo determine. Este ajuste debe realizarse cuanto antes para minimizar desviaciones mayores.
+
+
+Scrum prescribe cuatro eventos formales, contenidos dentro del Sprint, para la inspección y adaptación:
+
+-Planificación del Sprint (Sprint Planning)
+
+-Scrum Diario (Daily Scrum)
+
+-Revisión del Sprint (Sprint Review)
+
+-Restrospectiva del Sprint (Sprint Retrospective)
+
+-- Los valores de Scrum --
+
+El Equipo Scrum (Scrum Team) acuerda estar abierto a todo trabajo y a los desafíos que se les presenten al realizar su trabajo. Los miembros del Scrum Team se respetan entre si para ser personas capaces e independientes.
+
+-- El Equipo Scrum --
+
+Consiste en un Propietario del Producto (Product Owner), el Equipo de Desarrollo (Development Team) y un Scrum Master. Los Scrum Teams son auto-organizados y multifuncionales. Los equipos auto-organizados no son dirigidos por personas externas al equipo. El modelo de Scrum Team está diseñado para optimizar la flexibilidad, la creatividad y la productividad.
+
+Los Scrums Teams entregan productos de forma iterativa e incremental, maximizando las oportunidades para poder obtener retroalimentación.
+
+Las entregas incrementales de producto “Terminado” aseguran que siempre estará disponible una versión potencialmente útil y funcional del producto.
+
+- El Product Owner:
+
+Es el responsable de maximizar el valor del producto de Development Team.
+
+Es la única persona responable de gestionar el Product Backlog. La gestión del Product Backlog incluye:
+
+.Ordenar sus elementos para alcanzar objetivos y las misiones de la mejor manera posible.
+.Que sea visible, transparente y clara para todos.
+
+Entre otras.
+
+Las decisiones del Prodcut Owner se reflejan en el contenido y en la priorización de la Product Backlog.
+
+- El Development Team:
+
+Se compone de profesionales que realizan el trabajo de entregar un incremento de producto terminado (Done) que se pueda poner en producción final de cada Sprint.
+
+Un incremento de producto terminado es obligatorio en la Sprint Review.
+
+Tienen las siguientes características:
+
+.Son auto-organizados (Nadie, ni siquiera el Scrum Master, les indica cómo convertir elementos de la Product Backlog en Incrementos de funcionalidad potencialmente desplegables)
+.Son multifuncionales.
+
+Entre otras.
+
+- El Scrum Master:
+
+Es el responsalbe en promocionar y apoyar Scrum.
+
+Es un sirviente líder que está al servicio del y para el Scrum Team, ayuda a las personas externas al Scrum Team a entender qué interacciones con el Scrum Team pueden ser útiles y cuáles no.
+
+El Scrum Master sirve al Product Owner de varias formas:
+
+.Asegurar que los objetivos, el alcance y el dominio del producto sean entendidos por todos en el Scrum Team.
+.Encontrar técnicas para gestionar el Prodcut Backlog de manera efectiva.
+
+Entre otras.
+
+El Scrum Master sirve al Development Team de varias formas:
+
+.Guiarlo en ser auto-organizado y multifuncional.
+.Eliminar impedimentos para su progreso.
+.Ayudarlo a crear productos de alto valor
+
+Entre otras.
+
+El Scrum Master sirve a la organización de varias formas, incluyendo:
+
+.Liderarla y guiarla en la adopción de Scrum.
+.Planificar las implementaciones de Scrum en ella.
+.Ayudar a los empleados e interesados a entender y llevar a cabo Scrum y el desarrollo empírico de producto.
+
+Entre otras.
+
+-- Scrum Events --
+
+Son eventos predefinidos con el fin de crear regularidad y minimizar la necesidad de reuniones no definidas en Scrum. Son compartimientos o periodos de tiempo limitado (time-boxes).
+
+Una vez comienza un Sprint, no pueden acotarse o alargarse.
+
+Cada uno de los eventos de Scrum constituye una oportunidad formal para la inspección y adaptación en algún aspecto. Estos eventos se diseñaron específicamente para habilitar los pilares vitales de transparencia e inspección.
+
+-- Sprint -- 
+
+Es un compartimiento o periodo de tiempo (time-box) de un mes o menos durante el cual se crea un incremento de producto terminado utilizable y potencialmente desplegable. Cada Sprint comienza inmediatamente después de la finalización del anterior. 
+
+Los Sprint se componen de el Sprint Planning, los Daily Scrums, el trabajo de desarrollo, el Sprint Review y el Sprint Retrospective.
+
+Durante el Sprint:
+
+.No se realizan cambios que puedan afectar al Sprint Goal.
+.Los objetivos de calidad no disminuyen.
+.El alcance puede clarificarse y renegociarse entre el Product Owner y el Development Team a medida que se va aprendiendo más.
+
+Los Sprint están limitados a un mes calendario. Cada Sprint tiene un objetivo de lo que se construirá, un diseño y un plan flexible que guiará su construcción, el trabajo del equipo y el incremento de producto resultante.
+
+- Cancelación del Sprint:
+
+Un Sprint se cancelaría si el objetivo del Sprint llega a quedar obsoleto. Sólo el Product Owner tiene la autoridad de cancelarlo, aunque puede hacerlo bajo influencia de los interesados, Development Tema o del Scrum Master.
+
+Todos los los elementos de la Product Backlog que se hayan Terminado se revisan y normalmente el Product Owner los acepta. Los elementos no completados se vuelven a estimar y se vuelven a introducir a Prodcut Backlog.
+
+- Sprint Planning:
+
+El Sprint Planning tiene una duración máxima de ocho horas para un Sprint de un mes. El Scrum Master se asegura de que el evento se lleve a cabo y que los asistentes entiendan su propósito.
+
+El Sprint Planning responde a las siguientes preguntas:
+
+.¿Qué puede entregarse en el Incremento resultante del Sprint que comienza?.
+
+La entrada a esta reunión está constituida por el Product Backlog, el último Incremento de producto, la capacidad proyectada del Development Team para el Sprint y el rendimiento pasado del Development Team. El número de elementos de la Product Backlog seleccionados para el Sprint depende únicamente del Development Team y sólo ellos pueden evaluar qué son capaces de lograr durante el Sprint que comienza.
+
+Durante el Sprint Planning el Scrum Team define el Sprint Goal.
+
+.¿Cómo se conseguirá hacer el trabajo necesario para entregar el Incremento?.
+
+El Development Team decide cómo construirá esta funcionalidad durante el Sprint. Los elemento del Product Backlog seleccionados para este Sprint, más el plan para terminarlos, recibe el nombre de la Sprint backlog.
+
+Durante el Sprint Planning se planifica suficiente trabajo como para que el Development Team puede hacer una proyección de lo que cree que pueda completar en el Sprint que comienza. Para el final de la reunión, lo planificado por el Development Team para los primeros días del Sprint es descompuesto en unidades de un día o menos. El Development Team se auto-organiza para asumir el trabajo del Sprint Backlog, durante el Sprint Planning y a lo largo del Sprint.
+
+El Product Owner puede ayudar a clarificar los elementos del Product Backlog seleccionados y hacer concesionas. Se puede renegociar los elementos del Product Backlog en caso de que el trabajo no sea el esperado.
+
+Al finalizar el Sprint Planning, el Development Team debería ser capaz de explicar al Product Owner y al Scrum Master cómo pretende trabajar a lo largo del Sprint.
+
+- Sprint Goal:
+
+Es una meta establecida para el Sprint que puede lograrse mediante la imprementación del Product Backlog. Proporciona una guía al Development Team acerca de por qué está construyendo el incremento. Se crea durante el Sprint Planning. El objetivo del Sprint brinda al Development Team cierta flexibilidad con respecto a la funcionalidad implementada en el Sprint.
+
+Con el fin de satisfacer el objetivo del Sprint se implementa funcionalidad y la tecnología
+
+- Sprint Review:
+
+Se lleva a cabo al final del Sprint, su objetivo es inspeccionar el Incremento y adaptar el Product Backlog si fuese necesario. Durante este evento, el Scrum Team colabora acerca de lo que se hizo durante el Sprint. Los asistentes colaboran para determinar las siguientes cosas que podrían hacerse para optimizar el valor.
+
+Es una reunión de como máximo cuatro horas para Sprints de un mes.
+
+La reunión incluye los siguientes elementos:
+
+.Los asistentes son el Scrum Team y los interesados clave invitados por el Product Owner.
+.El Product Owner explica qué elementos del Product Backlog se han Terminado y cuales no.
+.El Development Team habla acerca de aspectos positivos y negativos del anterior Sprint.
+
+Entre otras.
+
+El resultado del Sprint Review es un Product Backlog revisado que define los elementos del mismo posibles para el siguiente Sprint.
+
+- Sprint Retrospective:
+
+Es una oportunidad para el Scrum Team de inspeccionarse y de crear un plan de mejoras que sean abordadas durante el siguiente Sprint.
+
+Tiene lugar después de la Sprint Review y antes del siguiente Sprint Planning. Se trata de una reunión restringida a lo máximo de tres horas para Sprint de un mes.
+
+El propósito del Sprint Retrospective es:
+
+.Inspeccionar cómo fue el último Sprint en cuanto a personas, relaciones, procesos y herramientas.
+.Identificar y ordenar los elementos que salieron bien y las posibles mejoras.
+.Crear un plan para implementar las mejoras a la forma en la que el Scrum Team desempeña su trabajo.
+
+-- Daily Scrum --
+
+El Daiy Scrum es una reunión con un bloque de tiempo de 15 mins para el Development Team. El Daily Scrum se realiza diariamente para cada día del Sprint. En él, el Development Team planea el trabajo para las siguientes 24 hs. Se inspecciona el trabajo avanzado desde el último Daily Scrum y se proyecta el trabajo del Sprint a realizar a continuación. El Daily Scrum se realiza a la misma hora y lugar todos los días.
+
+El Development Team es el encargado de establecer la estructura de la reunión y esta se puede conducir de diferentes maneras si se enforca en el progreso hacia el Sprint Goal.
+
+Es una reunión interna del Development Team.
+
+-- Scrum Artifacts --
+
+Representan el trabajo o el valor en diversas formas que son útiles para proporcionar transparencia y oportunidades para la inspección y adaptación. Los artefactos definidos por Scrum están diseñados específicamente para maximizar la transparencia de la información clave.
+
+-- Product Backlog --
+
+Es una lista ordenada de todo lo conocido que podría ser necesario en el producto y es la única fuente de requisitos para cualquier cambio a realizarse en el producto. El product Owner es el responsable de ella, incluyendo su contenido, disponibilidad y ordenación.
+
+Nunca está completa. El desarrollo más temprano de la misma sólo refleja los requisitos conocidos y mejor entendidos al principio. El Product Backlog evoluciona a medida de que el producto y el entorno en el que se usará también lo hacen. Es dinámica; cambia constantemente para identificar lo que el prodcuto necesita para ser adecuado, competitivo y útil. Mientras el producto exista, El product Backlog también existe.
+
+Enumera todas las características, funcionalidades, requisitos, mejoras y correcciones que constituyen cambios a realizarse sobre el producto para entregas futuras. Los elementos en el Product Backlog tienen como atributos la descripción, el orden, la estimación y el valor.
+
+El refinamiento (refinement) del Product Backlog es el acto de añadir detalle, estimaciones y orden a sus elementos. Es un proceso continuo en el cual el Product Owner y el Development Team colaboran.
+
+- Seguimiento del Progreso hacia los objetivos:
+
+El Product Owner hace un seguimiento del trabajo restante total al menos en cada Sprint Review. El Product Owner compara esta cantidad con el trabajo restante en Sprint Review previas, para evaluar el progreso hacia la finalización del trabajo proyectando en el tiempo deseado para el objetivo.
+
+- Sprint Backlog:
+
+Es el conjunto de los elementos del Product Backlog seleccionados para el Sprint, más un plan para entregar el Incremento de un producto y conseguir el objetivo del Sprint. El Sprint Backlog es una predicción hecha por el Development Team acerca de qué funcionalidad formará parte del próximo Incremento y del trabajo necesario para entregar esta funcionalidad en un Incremento "Terminado".
+
+El Sprint Backlog es un plan con un nivel de detalle suficiente como para que los cambios en el progreso se pueden entender en el Daily Scrum. El Development Team modifica el Sprint Backlog durante el Sprint y ésta emerge a lo largo del Sprint.
+
+- Seguimiento del Progreso del Sprint:
+
+El Development Team hace seguimiento del trabajo restante total al menos en cada Daily Scrum para proyectar la posibilidad de conseguir el objetivo del Sprint. Haciendo seguimiento del trabajo restante a lo largo del Sprint el Development Team puede gestionar su progreso.
+
+-- Increment --
+
+Es la suma de todos los elementos del Product Backlog completados durante un Sprint y el valor de los incremento de todos los Sprint anteriores. Al final de un Sprint el nuevo incremento debe estar "Terminado", osea en condiciones de ser utilizado. Es un cuerpo de trabajo inspeccionable.
+
+-- Transparencia de los Artefactos --
+
+Las decisiones para optimizar el valor y controlar el riegos se toman basadas en el estado percibido de los artefactos. En la medida en que los artefactos no son completamente transparentes, estas decisiones pueden ser erróneas, el valor puede disminuir y el risgo puede aumentar.  
+
+El Scrum Master debe trabajar con el Product Owner, el Development Team y otras partes involucradas para entender si los artefactos son completamente transparentes. La transparencia no ocurre de la noche a la mañana, es un camino
+
+-- Definición de Hecho (Done) -- 
+
+Los miembros del equipo deben tener un entendimiento compartido de lo que significa que el trabajo esté completado para asegurar la transparencia. Esta definición para el Scrum Team se utiliza para evaluar cuándo se ha completado el trabajo sobre el Incremento de producto.
+
+Esta misma definición guía al Development Team en saber cuántos elementos del Product Backlog puede selecionar durante el Sprint Planning. El propósito de cada Sprint es entregar Incrementos de funcionalidad que potencialmente se pueden poner en producción y que se ajustan a la definición de terminado actual para el Scrum Team.
+
+Cada Incremento se integra con todos los Incrementos anteriores y es probado de manera exhaustiva, asegurando que todos los Incrementos funcionan en conjunto.
+
+-- Nota Final --
+
+Los roles, eventos, artefactos y reglas de Scrum son inmutables y aunque es posible implementar solo partes de Scrum, el resultado no es Scrum.
+
+Scrum sólo existe como un todo y funciona bien como contenedor para otras técnias, metodologías y prácticas.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

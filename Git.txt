@@ -1,0 +1,68 @@
+Git
+
+Comandos básicos para la terminal
+
+-- Moverse entre directorios --
+
+pwd : en qué capeta estoy actualemnte
+
+git --version : para saver la versión de git
+
+ls : todos los archivos que tengo en la carpeta
+
+ls -l : me indica detalles de los archivos
+
+ls -lh : indica peso de los archibos
+
+clear : para limpiar la terminal
+
+cd : para moverse por directorios
+
+exit : salir
+
+-- Crear carpetas, archivos, eliminarlos --
+
+mkdir nombreCarpeta : para crear una carpeta
+
+touch nombreArchivo : para crear cualquier tipo de archivo
+
+cat nombreArchivo : para mostrar lo que contiene algún archivo
+
+rm nombreArchivo : elimina el archivo
+
+-- Inicializar carpeta y configurar usuarios --
+
+git init : para inicializar repositorio
+
+git config --global user.name "nombre" : para configurar nombre usuario
+
+git config --global user.email "correo@gmail.com" : para configurar email usuario
+
+git config user.name : para mostrarme quién está logueado 
+
+git config user.email : para mostrarme el email del usuario logueado
+
+-- Subir archivo a un repositorio local -- 
+
+git add nombreArchivo : para subir el archivo al staging area
+
+git status : para saber el estado del archivo
+
+git commit -m "comentario" : para subir el archivo a la rama principal de Git
+
+git log : para ver el historial de Git del archivo
+
+-- Subir archivos a GitHub --
+
+git remote add origin urlArchivo : para preparar el archivo para ser subido 
+
+git push origin master : para subir el archivo al repositorio
+
+-- Clonar repositorio -- 
+
+git clone urlRepositorio
+
+
+
+
+

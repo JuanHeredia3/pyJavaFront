@@ -1,0 +1,73 @@
+*Unidad 1*
+
+-- Base de Datos --
+
+- ¿Qué es una Basede Datos?
+
+Es una colección organizada de información estructurada, o datos, típicamente almacenads en un sistema de computadora.
+
+- Ventajas
+
+.Control sobre la redundancia de datos.
+.Consistencia de datos.
+.Compartir datos.
+.Mantenimiento de estándares.
+.Mejora en la integridad de datos.
+.Mejora en la seguridad.
+.Mejora en la accesibilidad a los datos.
+.Mejora en la productividad.
+.Mejora en el mantenimiento.
+.Aumento de la concurrencia.
+.Mejora en los servicios de copias de seguridad.
+
+- Desventajas
+
+.Complejidad.
+.Coste del equipamiento adicional.
+.Vulnerable a fallos.
+
+- Tipos de BBDD:
+
+.Relacionales:
+
+Se organizan los datos como un conjunto de tablas con columnas y filas.
+
+.Orientadas a objetos: 
+
+La información se representa en forma de objetos.
+
+.Distribuidas:
+
+Consta de dos o más archivos ubicados en diferenes sitios.
+
+.Almacenes de datos:
+
+Es un tipo de BBDD diseñada para consultas y análisis rápidos.
+
+.NoSQL: 
+
+Permite que los datos no estructurados y semiestructurados se almacenen y manipulen.
+
+.Orientadas a grafos:
+
+Almacena datos en términos de entidades y las relaciones entre entidades.
+
+.OLTP:
+
+.Es una BBDD analítica y rápida diseñada para un gra número de trnasacciones realizadas por múltiples usuarios.
+
+- Tipos de Clientes de BBDD:
+
+.Cliente CLI:
+
+Es un cliente que interactúa con la BBDD mediante el uso de la consola.
+
+.Cliente GUI:
+
+Interactúa con la BBDD mediante el uso de una aplicación gráfica.
+
+.Cliente Web:
+
+Interactúa con la BBDD a través de una página web.
+
+ 

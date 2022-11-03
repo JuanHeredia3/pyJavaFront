@@ -1,0 +1,9 @@
+.contenedor-padre {
+
+    display: flex;
+    
+    flex-wrap: wrap;
+
+    background-color: #006600;
+    
+}

@@ -1,0 +1,52 @@
+body {
+    font-size: 15px;
+    font-family: 'Noto Serif', serif;
+}
+
+.titles {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 4px;
+}
+
+.footerfont {
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.bgnav {
+
+    background-color: rgb(194, 241, 247);
+}
+
+.secondcolor {
+    color: rgb(237, 27, 162);
+}
+
+.logo {
+
+    height: 8rem;
+    width: 8rem;
+}
+
+.cardtitles {
+    position: relative;
+    top: -4rem;
+    left: -0.5rem;
+}
+
+.boxshadow {
+
+    box-shadow: 0 0 15px 0px;
+}
+
+a {
+    all: unset;
+}
+
+a:hover {
+    color: rgb(237, 27, 162);
+}
+
+.underline:hover{
+    text-decoration:underline;
+}

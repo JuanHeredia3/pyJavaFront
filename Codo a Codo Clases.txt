@@ -1,0 +1,908 @@
+Semana 2:
+
+Clase 3 - HTML
+
+HTML:
+
+Es un lenguaje enmarcado. No es de instrucciones
+
+etiquetas:
+
+<h1>texto</h1> encabezado
+<p>texto</p> párrafo 
+<br> produce un salto de línea en el texto
+
+contenedores: 
+
+<div>texto</div> separa por un enter
+<span>texto</span> separan por un espacio
+
+links:
+
+<a href='vínculo'>texto</a>
+<a href='vínculo' target='_blank'>texto</a> para abrir el vínculo en otra pestaña
+
+CTRL + ESPACIO para buscar que se me vincule un fichero con otro dentro del href
+
+Pueden tener atributos ej. <p tittle = 'Hola'> </p>
+
+Clase 4 - HTML
+
+<ul>
+	<li>Cliente1</li>
+	<li>Cliente2</li>
+	<li>Cliente3</li>
+</ul>
+
+<ol type="A">
+	<li>Cliente1</li>
+	<li>Cliente2</li>
+	<li>Cliente3</li>
+</ol>
+
+Para hace lista
+
+li*20{<texto que quiero que contenga>} para hacer muchas listas de una manera fácil
+
+ol>li*20 para poner los li dentro de un ol
+
+Lo mismo puedo hacer con las unordered lists
+
+ol>li*20{texto $} para ponerle un texto y enumerar a toda la lista
+
+a: para poner un hipervíncuilo rapido ej. a:mail
+
+<table style="background-origin: padding-box; border: bisque;">
+        <thead>
+            <tr>
+                <th>Juan</th>
+                <th>Bruno</th>
+                <th>Ivo</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+    </table>
+
+Para hacer tablas con estilos
+
+<iframe src="" frameborder="0"></iframe> para poner un marco en la página
+
+<form action=""<a dónde va a guardar los datos>> method="get"> Para hacer un formulario.
+
+<label for="nombre">Nombre</label>
+<input type="text" name="nombre" id="nombre" placeholder="Ingrese el nombre"> 
+
+placeholder es una ayuda que aparece adentro del input.
+
+Para crear una campo 
+
+<br><br>
+        <input type="submit" value="Enviar">
+
+Para crear un botón
+
+<strong></strong> para poner letra en negrita
+
+Semana 3
+
+Clase - 5 HTML Formulario:
+
+input: para elegir el tipo de input ej. input:date
+
+<textarea name="" id="" cols="30" rows="10"></textarea> Para poner un texto de observación
+
+Para poner que los campos sean obligatorios hay que usar required dentro de los input 
+ej. <input type="text" name="nombre" id="nombre" required> 
+
+Existen dos métodos: GET y POST
+
+GET: - pesado + inseguro
+POST: + pesado - inseguro 
+
+Clase - 6 CSS:
+
+<span>Sirve para aplicar estilo al texto o agrupar elementos en línea.
+<div> Sirve para crear secciones o agrupar contenidos.
+<img src="images/fotoPerfil.png" alt="foto Perfi"> para poner imágenes.
+
+<div style="background-color: #FFFFFFF;"> Style inline
+
+<style> Para hacer style head 
+ej.
+<style>
+	p{
+		background-color: red;
+		border: 1px solid
+	}
+</style>
+
+En el caso anterior estoy diciendo que todos los párrafos con la etiqueta <p> van a tener ese estilo
+
+Selector id:
+
+Bastante utilizado
+
+Usado con menos frecuencia, se suele utilizar para algo que rompa el patrón de estilo
+
+Se puede utilizar sólo UNA VEZ ya que es a través de una id y un id sólo se puede utilizar una vez ya que no puede haber dos id iguales
+
+ej.
+
+En fichero CSS:
+
+#anuncio{
+	text-align: right;
+}
+
+En el fichero HTML:
+
+<div id="anuncio">Titulo</div>
+
+Style externo:
+
+Muy utilizado
+
+Se suele hacer los estilos en otro fichero
+
+Hacemos un fichero de CSS ej. micss.css
+
+Y después para linkearlo hacemos <a rel="stylesheet" href="css/micss.css">, dentro del head del HTML
+
+Y dentro del fichero tengo todos los estilos que se le van a aplicar a todas las respectivas etiquetas 
+ej.
+div{
+	text-align: center;
+	background-color: blue;
+	font-size: 1.5rem;
+}
+
+a TODOS los div de mi archivo HTML se les aplicará este estilo
+
+selector de clase:
+
+El más utilizado
+
+En este caso, vamos a crear una clase dentro del fichero CSS y en el fichero HTML vamos a elegir, a través de la propiedad class, a qué etiqueta queremos que aplique ese estilo
+
+ej.
+
+Dentro del fichero CSS:
+
+.textoTitulo{
+	background-color: blue;
+}
+
+Dentro del fichero HTML:
+
+<div clas= textoTitulo">Titulo 1</div>
+
+Semana 4
+
+Clase 7 CSS:
+
+Para seleccionar etiquetas que esten dentro de etiquetas hacemos ej.
+
+.textoMenu > img {
+	
+	wigth: 45px;
+	height: 45px;
+	border-radius: 25px;
+}
+
+Para que un estilo se aplique a todo el HTML puedo aplicarlo directamente en le body ej.
+
+body {
+
+	text-align: center;
+}
+
+font-family
+
+font-size: tamaño de la letra. (por defecto es 16px)
+
+margin: define un margen entre los objetos. 
+
+padding: define el margen interno entre el objeto y el texto.
+
+color
+
+width
+
+height
+
+border-radius
+
+border
+
+background-color
+
+medidas: rem (16px), em (equivale a la anchura de la letra M del tipo y tamaño de letra del elemento. poco usado)
+
+box-shadow
+
+Selectores: etiquetas, clases y id 
+
+Clase 8 CSS:
+
+Posicionamiento
+
+display: inline-block; para mostrar los elementos uno al lado del otro
+
+display: inline; 
+
+position: static; para fijar un elemento en la página
+
+position: relative; 
+top: 0px;
+left: 0px; 
+
+Para mover un elemento los píxeles donde yo quiero a lo largo de la página
+
+position: absolut;
+
+position: sticky; (el más utilizado)
+
+Pseudo-classes: Las pseudo-classes sirven para hacer estilos dependiendo de la acción que realice el usuario
+
+ej.
+p:hover{
+	background-color: red;
+}
+
+Dice que para cuando te pongas arriba de un <p> con el mouse se ponga el color de fondo en rojo.
+
+ej.
+li:last-child{
+	background-color: red;
+}
+
+Para poner el fondo del último elemento de una lista en color rojo
+
+li:first-child{
+	background-color: red;
+}
+
+
+Para poner el fondo del primer elemento de una lista en color rojo
+
+li:nth-child(2n){
+	background-color: red;
+}
+
+
+Para poner el fondo de todos los elemento de una lista que sean pares en color rojo
+
+Estos son los pseudo-classes mas utilizados
+
+cursor: para poner efectos al cursos del mouse al ponerse arriba de un texto
+
+ej.
+cursor: pointer;
+
+Para hacer que el cursor se vuelva como una manito
+
+Pseudo-elementos: se utiliza para diseñar partes específicas de elementos o etiquetas.
+
+ej.
+p::first-line{
+	background-color: red;
+}
+
+p::first-letter{
+	font-size: 2rem;
+}
+
+Esto es para hacer que la primera línea de un texto sea de color rojo de fondo y que la primera letra sea más grande
+
+ej.
+h4::before{
+	content: "Leer esto";
+	font-size: 2rem;
+	background-color: red;
+}
+
+h4::after{
+	content: "autor J. L. Borgues";
+	font-size: 2rem;
+	background-color: red;
+}
+
+p::selection{
+	background-color: yellow;
+}
+
+font-weight: bolder; para hacer letra en negrita.
+
+text-decoration: none; para sacarle el subrayado a los links.
+
+el * en selectores es para aplicar un estilo a TODOS los elementos de la página
+
+ej.
+* {
+	margin: 0;
+}
+
+Clase 9 CSS:
+
+Posicionamiento: 
+
+Absoluto: Toma como referencia el padre
+
+Relativo: Va de la mano con el absoluto, es el padre del absoluto
+
+Sticky: Deja anclado en la página
+
+Fixed: Toma como referencia el viewport
+
+display: none; es para no mostrar el elemento
+
+display: inline-block; para mostrar los elementos uno al lado del otr (el más utilizado)
+
+display: flex; para especificar precisamente dónde quiero colocar los elementos
+-------
+
+letter-spacing: ; para generar un espacio entre las letras 
+
+float: ; para poner un texto o una imagen con un marco el cual puede ser colocado entre texto u otras cosas
+
+ej display flex.
+
+.menuArriba {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	height: 70px;
+}
+
+animaciones: 
+
+Para empezar a poner animaciones primero hay que descargar el paquete de animaciones (e importarlo con import animate.css) o copiar el link de la página en el head
+
+En donde queramos poner una animación hay que poner en la clase del elemento
+ej. class="caja animate_animated animate_bounceIn"
+
+También se puede poner dentro del CSS ej.
+
+.caja {
+	animation: bounce;
+	animation-duration: 2s;
+	--animate-delay: 2s;
+}
+
+Clase 10 - CSS:
+
+ejemplos de animaciones:
+
+.caja1 {
+	background-color: red;
+	text-align: center;
+	width: 150px;
+	height: 150px;
+}
+
+.caja1:hover {
+	animation: bounce;
+	animation-duration: 2s;
+	--animate-repeat: 2;
+}
+
+https://animate.style/ 
+
+FontAwesome: FontAwesome sirve para poner íconos 
+
+Para empezar a usarlo hay que poner <script src="https://kit.fontawesome.com/9604b60dc2.js" crossorigin="anonymous"></script> en el head 
+
+ej. fa-3x para cambiarle el tamaño a los íconos
+
+También podemos instalar íconos con Boostrap: https://icons.getbootstrap.com/
+
+Para empezar hacerlo habría que linkear el css de boostrap en el head
+
+Para sacar fuentes se puede hacer a través de Google Fonts:  https://fonts.google.com/
+
+------
+
+margin-bottom: ; para poner un margen sólo para abajo
+
+margin-right...
+
+display: flex; es el display más utilizado
+
+Clase 11 - CSS:
+
+processing.org para hacer arte y processing
+
+p5js.org para dibujar y hacer arte con javascript
+
+Media query: para adptar una página a cualquier dispositivo
+
+ej.
+
+<head>
+<link rel=stylesheet media="only screen and (max-wigth:1500px)" href="css/mediaPC.css">
+<link rel=stylesheet media="only screen and (max-wigth:1000px)" href="css/mediaTablet.css">
+<link rel=stylesheet media="only screen and (max-wigth:600px)" href="css/mediaMovil.css">
+</head>
+
+Esto dice que cuando la pantalla llega a menos de 1000 0 600 px, va a empezar a tomar otro estilo diferente linkeado en el anterior <link>
+
+Otra forma más fácil es poner el media query directamente en un solo archivo CSS.
+
+ej.
+
+CSS
+@media only screen and (max-width:1500px) {
+	body{
+		background-color: lightblue;
+	}
+
+	.texto{
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (max-width:1000px) {
+	body{
+		background-color: red;
+	}
+
+	.texto{
+		font-size: 0.5rem;
+	}
+
+}
+
+NOTA se pueden poner varios @media para diferentes tamaños de pantalla 
+
+AOS: sirve pra hacer animaciones mientras el usuario va scrolleando
+
+michalsnik.github.io
+
+Clase 12 - Bootstrap:
+
+Bootstrap nos brinda herramientas que nos van a hacer ahorrar tiempo a la hora de hacer los estilos
+
+Para implementarlo hay que ir a docs -> CDN y copiar los links que nos da
+
+Los estilos de bootstrap se definen en las class de los elementos
+
+Se puede poner una clase de bootstrap al mismo tiempo que una clase de CSS
+
+https://getbootstrap.com/
+https://materializecss.com/
+
+Librería: una solución puntual
+
+anbuselvanrocky.bootstrap5-vscode extensión para vscode para crear un HTML con todo lo necesario para bootstrap
+
+Clase 13 - Bootstrap:
+
+Grillas: Lo que hace el bootstrap para administrar el responsive (acomoadmiento de los elementos a lo largo de la página) es dividir la pantalla en 12 columnas.
+
+ej.
+<div class="row">
+        <div class="col-4 border">hola</div>
+        <div class="col-4 border">hola</div>
+        <div class="col-4 border">hola</div>
+</div>
+
+Cada uno de esos div ocupan 4 columnas.
+
+Para apilar los elementos cuando el tamaño de la pantalla se está reduciendo (media query)se puede utilizar: -xs- -sm- -md- -lg- -xl- -xxl-
+
+Dependiendo de a cuántos píxeles queremos que empiece a actuar el media query.
+
+ej.
+<div class="row">
+        <div class="col-md-4 border">hola</div>
+        <div class="col-md-4 border">hola</div>
+        <div class="col-md-4 border">hola</div>
+</div>
+
+bs5 + TAB para facilitar la instalacion de Bootstrap
+
+Para aplicar padding en el eje y o x se utiliza py o px
+
+ej.
+
+<div class="row text-center">
+        <div class="col-md-4 py-3 px-5 border">hola</div>
+        <div class="col-md-4 py-3 px-5 border">hola</div>
+        <div class="col-md-4 py-3 px-5 border">hola</div>
+</div>
+
+text-center para alinear al centro.
+
+mb- para colocar margen por abajo del elemento
+
+bg- para el background-color.
+
+fs- para el font size
+
+p- para los paddings.
+
+form-control para darle estilo a un input de un formulario.
+
+Lo mejor es combinar Boot con CSS para así tener también la posibilidad de aplicar estilos más específicos.
+
+En caso de que toda la página requiera de un margen (como en un formulario) se puede poner a todo nuestro contenido en un div de la clase container para que todos los elementos de la página tengan un margen por defecto.
+
+ej.
+<div class="container">
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese su nombre" 		required>
+        </div>    
+</div>
+
+Para hacer un desplegable que seleccione una opción en HTML se utiliza <select></select> y <option></option> dentro del select para las distitnas opciones
+
+ej.
+<div>
+        <label for="ciudad">Ingrese su ciudad</label>
+        <select name="ciudad" id="ciudad" class="form-select">
+            <option value="1">Córdoba</option>
+            <option value="2">Buenos Aires</option>
+            <option value="3">Santa Fe</option>
+        </select>
+</div>
+
+Para ponerle estilo de Boot a ese select se utiliza form-select
+
+Clase 14 - Bootstrap:
+
+jumbotron: Se utiliza para poner imágenes de fondo con texto adelante de la página.
+
+fs- para establecer font-size
+
+Para establecer una imagen de fondo se utiliza dentro de un CSS la función background-image
+
+ej.
+.fondo {
+	background-image: url("../images/hola.JPG");
+}
+
+text- para configurar el color del texto.
+
+Clase 15 - Javascript:
+
+HTML, CSS, Javascript ese ejecuta del lado del cliente.
+
+Java se ejecuta del lado del servidor.
+
+<script src="js/javascript.js"></script> en el body o el head para linkear el js
+
+var nombreVariable = confirm("¿Usted es mayor de edad?") para declara variable
+
+if en js
+
+if(ok){
+	document.write("<div>Hola</div>"); 
+}else{
+	document.write("<div>Chau</div>");
+}
+
+document.write() para escribir en una página
+
+confirm() para preguntar en una página
+
+prompt() para que el usuario ingrese algún dato
+
+console.log() para que me muestre en consola lo que muestra en el fondo
+
+Clase 16 - Javascript:
+
+La consola se ve en la página -> inspeccionar
+
+Para las variables es mejor prácticar usar let en ves de var
+
+ej.
+let nombre = "Juan";
+
+Para concatenar ej. console.log("Hola " + nombre);
+
+Operador nuevo: === (estrictamente igual)
+
+El estrictamente igual te dice si el número y el tipo de variable es exactamente igual, sino devuelve false.
+
+El ; no es obligatorio.
+
+Formas de declarar una variable: var, let y cons
+
+cons para las constantes.
+
+let para que la variable, una vez que ya fue utilizada, se libera de memoria.
+
+Clase 17 - Javascript:
+
+console.log(`resta: ${a - b}`) Otra forma de concatenar
+
+Las estructuras de control son idénticas a las de Java, al igual que los operadores lógicos.
+
+Funciones:
+
+function nombreFuncion() {}
+
+Eventos: 
+
+onkeyup Para cada vez que el usuario apriete una letra ejecute una acción
+onclick Para que haga una acción cuando el usuario aprete un botón
+
+ej.
+
+HTML:
+<button onclick="validarEmail()">Validar<button>
+
+
+JavaScript:
+function varidarEmail() {
+	let email = document.getElementById("email").value
+	console.log(email)
+
+	if(email.length <= 0){
+		document.getElementById("mensaje").innerHTML="Debe ingresar algún caracter" //Le asigna texto al HTML
+		console.log("Debe ingresar algún caracter")
+	}else if(email.indexOf("@") == -1){ //Busca un arroba, si no lo encuentra me devuelve -1
+		document.getElementById("mensaje").innerHTML="Formato incorrecto"
+		console.log("Formato incorrecto")
+	}else{
+		document.getElementById("mensaje").innerHTML="El mail es correcto"
+		document.getElementById("mensaje").className="bg-info" //Le asigna otra clase al elemento del HTML
+	}
+}
+
+
+Clase 18 - Javascript:
+
+console.log(`Resta: a-b=${a-b}`) es otra forma de concatenar
+
+Existe las funciones Math ej let result = Math.sqrt(x)
+
+Clase 19 - Javascript:
+
+Funciones flechas: 
+
+ejs.
+
+let dividirFlecha=(a, b)=>a/b
+
+let sumarFlecha=(a, b)=>a+b
+
+Funciones anónimas:
+
+ej.
+
+let raíz = function (a) {
+	return Math.sqrt(a);
+}
+
+Sirven para funciones sencillas.
+
+Arrays: let variable=[]
+
+Los valores del array no tienen que ser del mismo tipo.
+
+Propiedades de los Arrays:
+
+x.lenght
+x.sort() //lo ordena y lo modifica
+x.pop() //saca el último índice del Array
+x.push(x) //agrega el parámetro al Array
+x.indexOf(x) //busca el parámetro en el Array
+x.splice(x, x) //para remover una cierta parte del Array
+
+Matrices:
+
+ej.
+let butacas=[
+	["A1", "A2", "A3"],
+	["B1", "B2", "B3"],
+	["C1", "C2", "C3"]
+] 
+
+For Of (For Each):
+
+for(i of sueldos){
+	console.log(i)
+}
+
+Para recorrer una matriz con un For y con un For Each:
+
+ej.
+for (i of sueldos){
+	for (e of fila){
+		console.log(colum)
+	}
+}
+
+Clase 20 - Javascript:
+
+El indexOf de un array devuelve la posición en donde se encontró el elemento. si no lo encuentra devuelve -1.
+
+No es necesario aclarar qué tipo de variable va a devolver la función.
+
+ej.
+funtion esMayor(edad){
+	return edad =>18
+}
+
+
+ej.
+let butacas = [1 , 2, 3]
+
+butacas.indexOf(1) //devuelve 0
+
+x.every para validar en un Array si todos los elementos cumplen con una determinada función.
+
+ej.
+edades.every(esMayorEdad)
+
+Métodos callback: en vez de enviar valores, envío funciones.
+
+ej.
+let sueldos = [5000, 16000, 80000]
+
+function aumentarSueldo(sueldo){
+    sueldos+=sueltos/100
+}
+
+sueldos.forEach(aumentarSueldo) 
+
+x.forEach() es equivalente al every.
+
+x.filter() filtra los elementos y los coloca en otro Array.
+
+ej.
+let arrayEsMayorEdad = edades.filter(esMayorEdad)
+
+x.some() devulve si ALGUNO es verdadero, no necesariamente todos.
+
+x.map() agarre el valor de los índices de los Array y ejecuta una acción o función y te crea un nuevo Array.
+
+ej.
+let suedosAumentados = sueldos.map(aumentarSueldo)
+
+onmouseover para un evento cuando el mouse se posicione arriba de algún elemento.
+
+Clase 21 - SUSPENDIDA
+
+Clase 22 - Javascrip:
+
+En un callback hay parámetros que no son obligatorios como el índice y el Aray
+
+ej. 
+function aunemntar1000(sueldo, indice, sueldos) {
+    sueldo+=1000
+
+    sueldos[indice]=sueldo
+}
+
+reduce() es una función callback que reduce un array en base a una condición.
+
+ej.
+function sumatoriaReduce(sumaR, edad, indice, edades) {
+    sumaR+=edad
+    return sumaR
+}
+
+reduce espera cuatro parámetros: un contador, un elemento del array, su índice y el Array completo.
+
+Clase 23 - DOM:
+
+DOM Document Object Model
+
+DOM es el objeto document el cual nos permite acceder a cualquier parte del HTML.
+
+document.body para modificar el body del HTML.
+
+docuemnt.body.children para acceder a los hijos del body.
+
+document.getElementByTagName() para traer todo los elementos iguales ej. document.getElementByTagName("button").
+
+Clase 24 - DOM:
+
+querySelector te permite seleccionar un elemento a través del id o la clase
+
+ej.
+document.querySelector("#mensaje")
+
+document.querySelector(".mensaje")
+
+Si hay varias clases con la misma clase, va a devolver el primer elemento que encuentre.
+
+querySelectorAll va a devolver TODOS los elementos que tengan la misma clase
+
+ej.
+document.querySelectorAll(".mensaje")
+
+Nodes nos permite crear elementos, agregar hijos y eliminarlos.
+
+ej.
+function addInput(){
+
+	let contador = 0
+	let input = document.createElement("input")
+
+	contador++
+
+	input.setAttribute("type","text")
+	input.setAttribute("id",´nombre${contador}´)
+	input.setAttribute("class","form-control mb-3")
+	input.setAttribute("placeholder",´Datos hijo${contador}´)
+	
+	let btn = document.createElement("button")
+	btn.setAttribute("class", "btn btn-primary")
+	input.setAttribute("onclick",`delInput('nombre${contador}')`)	
+
+	let texto = document.creatTextNode("Eliminar")
+	btn.appendChild(texto)	
+
+	let datos = document.querySelector("datos")
+	datos.appendChild(input)
+	datos.appendChild(btn)
+}
+
+Clase 21 - RECUPERACIÓN Javascript:
+
+Clase 25 - BBDD:
+
+Para crear una tabla ej.
+
+CREATE TABLE alumnos (
+	id int AUTOINCREMENT,
+	nombre varchar(50),
+	apellido varchar(50),
+	dni bigint
+)
+
+Eliminar tabla ej.
+
+DROP TABLE alumnos
+
+Insertar datos ej.
+
+INSERT INTO alumnos (id, nombre, apellido, dni)
+VALUES ("Juan", "Heredia", 44580371)
+
+Clase 25 - BBDD:
+
+CREATE DATABASE nombreDatabase para crear una BBDD
+
+ALTER TABLE nombreTabla para modificar tablas
+
+ej.
+ALTER TABLE `colegio`.`materias` 
+CHANGE COLUMN `id` `id` INT(11) NOT NULL AUTO_INCREMENT 
+
+Indices: hace que las búsquedas sean más rápidas 
+
+Para crear el índice:
+
+CREATE INDEX indexNombre
+ON nombreTable (nombreColumna) 
+
+
+Para modificar registros:
+
+UPDATE nombreTabla SET nombreRegistro=xxx WHERE id=x
+
+Clase 26 - BBDD:
+
+Para agregar foreing key:
+
+ej.
+CREATE TABLE materias (
+	id int PRIMARY KEY NOT NULL AUTOINCREMENT,
+	nombre varchar(50),
+	id_profesor FOREING KEY
+)
+
+

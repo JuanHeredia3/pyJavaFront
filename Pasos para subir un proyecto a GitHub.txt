@@ -1,0 +1,20 @@
+- Abrir terminal del proyecto
+- git init //Inicializa el proyecto git.
+- git add . //Sube todos los archivos al stage area.
+- git commit -m 'comentario' //Sube los archivos del stage area al repo local.
+- Crear repositorio en GitHub
+- git remote add origin Linkdelrepo //Lo vincula con el repo.
+- git push -u origin master //Sube los archivos desde el repo local al repo GitHub.
+
+Para lanzar el proyecto a la web:
+
+- Crear un archivo index.html.
+- Ir al repositorio de GitHub.
+- Ir a settings -> pages 
+- Voy a branch, pongo Master y le doy en save.
+
+Si hago algún cambio en el proyecto:
+
+- git add .
+- git commit -m 'comentario'
+- git push -u origin master

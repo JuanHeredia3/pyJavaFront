@@ -1,0 +1,54 @@
+body {
+    font-size: 14px;
+}
+
+.logogoogle {
+    height: 14rem;
+    width: 25rem;
+}
+
+.input {
+    height: 1.8rem;
+    width: 34rem;
+}
+
+a {
+    all: unset;
+}
+
+.googlelenguage {
+    color: rgb(94, 12, 94);
+}
+
+form i.lupa {
+    position: absolute;
+    top: 19.5rem;
+    left: 27rem;
+    font-size: 20px;
+}
+
+form i.mic {
+    position: absolute;
+    top: 49%;
+    left: 67.5%;
+
+    font-size: 22px;
+}
+
+.input:hover {
+    box-shadow: 0 0.5px 2px 0px grey;
+}
+
+button:hover {
+    box-shadow: 0 0.5px 2px 0px grey;
+}
+
+.googlelenguage:hover {
+    text-decoration: underline;
+    color: rgb(94, 12, 94); 
+}
+
+.toplink:hover {
+    text-decoration: underline;
+    color: black;
+}

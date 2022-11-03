@@ -1,0 +1,1213 @@
+* Unidad 1 *
+
+-- Conceptos de Javascript --
+
+Javascript se ejecuta del lado del cliente en el contexto del navegador (cleinte web).
+
+-- Uso de la consola en Javascript --
+
+Para mostrar un mensaje por consola se debe hacer console.log("Texto").
+
+Existen métodos para mostrar mensajes en la consola de navegador:
+
+console.log() muestra el mensaje sin clasificarlo.
+
+console.info() muestra un icono azul de información y a continuación el texto del mensaje.
+
+console.error() muestra un icono rojo de error con el mensaje coloreado en rojo.
+
+console.warn() muestra un icono amarillo de advertencia.
+
+Otros métodos que existen:
+
+console.dir(object) imprime una representación del objeto en Javascript.
+
+console.dit(documents.links) muestra todos los enlaces en la página.
+
+console.dirxml(object) imprime una representación en XML de de los elementos descendientes de objeto.
+
+console.clear() limpia la ventana de la consola.
+
+-- Uso inicial del lenguaje --
+
+Comentarios: //comentario
+
+Por convención, los nombres de las variables se escriben en lowerCamelCase.
+
+Javascript es un lenguaje no tipado.
+
+Para declarar una variable utilizamos var y let.
+
+Para las constantes usamos const.
+
+-- Ámbito y declaración de variables --
+
+Concepto de ámbito de variables: 
+
+Se le llama ámbito de variables al lugar en donde éstas están disponibles.
+
+Variables globales:
+
+Están declaradas en el ámbito más amplio posible. Son accesibles desde cualquier lugar de la página.
+
+Variables locales:
+
+Declaradas en lugares cerrados. Pueden ser locales a una función pero también pueden ser locales a otros ámbitos (ej. un bucle).
+
+Declaración de variables con let:
+
+En el caso de let, la declaración de la variable afecta al bloque.
+
+ej.
+for(let i=0; i<3; i++) {
+
+// en este caso, la variable i sólo existe dentro del bucle for
+
+alert(i);
+
+}
+
+// fuera del bloque for no existe la variable i
+
+ 
+
+Si esa variable "i" hubiera sido declarada en la cabecera del bucle for mediante "var", sí que existiría fuera del bloque de código del for.
+
+
+-- Tipos básicos de variables --
+
+Númerico: 
+
+Al contrario de la mayoría de lenguajes, en Javascript sólo existe UN tipo de valor numérico.
+
+Podemos escribir números con notación científica y también números en otras bases numéricas.
+
+Cadenas:
+
+\n para salto de línea.
+
+\t para un TAB.
+
+\' para poner comilla simple.
+
+\" para poner comilla doble.
+
+\r para retorno de carro.
+
+\f para avance de página.
+
+\b para retroceder espacio.
+
+\\ para poner contrabarra.
+
+Boleanos:
+
+true o false pero también podrían contener un objeto, una función o un null.
+
+-- Conversión de datos string a número --
+
+paseInt() y parseFloat() se utilizan para la conversión de un String a un número si es posible.
+
+Cuando se encuentra el primer caracter no numérico se ignora el resto de la cadena. Si el primer caracter encontrado no es convertible a número, el resultado será NaN (Not a Number)
+
+Cuando el valor no es un string, javascript hace primero una conversión implícita a string.
+
+ejs.
+parseInt("10"); // 10
+
+parseInt("10.8"); // 10
+
+parseInt("10 22"); // 10
+
+parseInt(" 14 "); // 14
+
+parseInt("20 dias"); // 20
+
+parseInt("Hace 20 dias"); // NaN
+
+parseInt("44aa33bb"); // 44
+
+parseInt("3.14"); // 3
+
+parseInt("314e-2"); // 314
+
+parseInt(""); // NaN -> ¡¡el string vacio se convierte a NaN!!
+
+parseInt(null); // NaN
+
+parseInt("10",10); // 10
+
+parseInt("010"); // 10 ¡¡ * 8 en navegadores antiguos * !!
+
+parseInt("10",8); // 8
+
+parseInt("0x10"); // 16 0x indica que el número es hexadecimal
+
+parseInt("10",16); //16
+
+ejs.
+parseFloat("3.14"); // 3.14
+
+parseFloat("314e-2"); // 3.14
+
+parseFloat("0.0314E+2"); // 3.14
+
+parseFloat("3.14dieciseis"); // 3.14
+
+parseFloat("A3.14"); // NaN
+
+parseFloat("tres"); // NaN
+
+parseFloat("e-2"); // NaN
+
+parseFloat("0x10"); // 0 -> No admite el prefijo 0x para indicar 'hexadecimal'
+
+parseFloat(""); // NaN -> ¡¡el string vacio se convierte a NaN!!
+
+parseFloat(null); // NaN
+
+También tenemos a Number(), que a diferencia de los anteriores, éste es específicmante para conversión de tipos. En cambio parseInt() y parseFloat() son para extraer un número de un String.
+
+Number() es un constructor para crear objetos de tipo Number, pero cuando se utiliza sin el new funciona como un conversor a tipo númerico.
+
+ej.
+como constructor: var myNumber = new Number(14);
+
+como método: var myNumber = Number("14");
+
+ejs.
+Number("12"); // 12
+
+Number("3.14"); // 3.14
+
+Number("314e-2"); // 3.14
+
+Number("0.0314E+2"); // 3.14
+
+Number("e-2"); // NaN
+
+Number('0x10'); // 16 admite el prefijo 0x para indicar 'hexadecimal'
+
+Con Number() podemos convertir booleans en números, false siempre se convierte en 0 y true en 1
+
+Conversión implicita '+'
+
+La conversión implícita es una forma de conversión rápida a número. Podemos utilizar cualquier operación que fuerce al intérprete a realizar una conversión implícita de tipos pero que no varíe el operando:
+
+ejs.
+var myNumberValue = "8" - 0; // number 8
+
+var myNumberValue = "8" * 1; // number 8
+
+var myNumberValue = "8" / 1; // number 8
+
+var myNumberValue = +"8"; // number 8
+
+ 
+
+La forma más utilizada por su simplicidad es +var. El operador unitario + no cambia el valor de var pero lo convierte a número. No confundir con ++var que sí cambia el valor, sumándole uno.
+
+* Unidad 2 *
+
+-- Operadores Javascript --
+
+Operadores aritméticos:
+
++ Suma
+- Resta
+* Multiplicación
+/ División
+% Resto
+++ Incremento
+-- Decremento
+
+Operadores de asignación:
+
+= Asignación
++= Asignación con suma
+-= Asignación con resta
+*= Asignación con multiplicación
+/= Asignación con división
+%= Se obtiene el resto y se asigna
+
+Operadores de cadenas:
+
++ Concatena dos cadenas (se puede concatenar distintos tipos de variables)
+
+Operadores condicionales:
+
+== Comparación
+!= Distinto
+> Mayor que
+< Menor que
+>= Mayor igual que
+<= Menor igual que
+
+Operadores lógicos:
+
+! NOT
+&& AND
+|| OR
+
+-- Typeof Javascript - Alert - Prompt -- 
+
+- Operador typeof - control de tipos:
+
+typeof devuelve de qué tipo es la variable
+
+ej.
+document.write("<br>El tipo de boleano es: " + typeof boleano) //El tipo de boleano es: boolean
+
+Los distintos tipos de variables pueden ser:
+
+boolean 
+number (ya sean float o int)
+string
+object
+function
+undefined (para variables declaradas a las cuales no se les ha asignado ningún valor)
+
+- Función Alert:
+
+Esta función es un método del objeto Window, es la encargada de mostrar una pequeña ventana de aviso en la pantalla. Usamos esta función cuando se requiere que aparezca un mensaje cunaod ocurra determinada acción en el programa.
+
+Recibe por parámetro el mensaje que debe mostrar en la ventana.
+
+ej.
+alert("Hola Mundo")
+
+- Prompt:
+
+Es un método del objeto Window. Se utiliza cuando el usuario ingresa datos por medio del teclado. 
+
+let nombre = prompt("Ingrese su nombre: ")
+
+-- Condicionales --
+
+- IF:
+
+if (condición){
+
+}else{
+
+Operador ternario IF:
+
+Se utiliza un ? y después la condición que se ejecuta al ser True y por último la condición si es False, separadas por unos :
+
+momento = (hora_actual < 12) ? "Antes del mediodía" : "Después del mediodía"
+
+
+- Estructura Switch:
+
+switch(expresión) {
+	case valor1:
+		break;
+
+	case valor2:
+		break;
+
+	case valor3:
+		break;
+	...
+	default:
+
+}
+
+- For:
+
+for (inicialización; condición; incremento/decremento){
+
+}
+
+ej.
+for (i=0; i<=10; i++) {
+
+document.write(i)
+
+- While:
+
+while (condición){
+
+}
+
+Do While:
+
+do {
+
+}while(condición)
+
+- Break y continue:
+
+Se pueden usar en las distintas estructuras de control pero principalmente se usan en los bucles.
+
+break: Significa detener la ejecución de un bucle y salirse de él.
+
+continue: Sirve para detener la iteración actual y volver al principio del bucle para realizar otra iteración.
+
+ej.
+for (i=0;i<10;i++){
+
+	document.write (i)
+
+	escribe = prompt("dime si continuo preguntando...", "si")
+
+	if (escribe == "no"){
+
+		break
+	}
+}
+
+var i=0
+
+while (i<7){
+
+	incrementar = prompt("La cuenta está en " + i + ", dime si incremento", "si")
+
+	if (incrementar == "no"){
+
+		continue
+	}
+
+	i++
+
+}
+document.write("<br>")
+
+}
+
+* Unidad 3 *
+
+-- Arrays -- 
+
+Son un objeto global.
+
+- Crear un Array:
+
+ej.
+let frutas = ["Manzana", "Banana"]
+
+- Acceder a un elemento:
+
+ej.
+let primero = frutas[0]
+
+- Añadir un elemento al final del Array:
+
+ej.
+frutas.push("Naranja")
+
+- Eliminar el último elemento al final del Array:
+
+ej.
+frutas.pop()
+
+- Añadir un elemento al principio del Array:
+
+ej.
+frutas.unshift("Fresa")
+
+- Encontrar el índice de un elemento:
+
+ej.
+frutas.indexOf("Naranja") //Devuelve la posición del elemento o -1
+
+- Eliminar un único elemento mediante su posición:
+
+frutas.splice(1, 1) // Los parámetros son: posicón por la cual quiero que empiece a eliminar, cuántos elementos 			quiero que elimine a partir de esa posición.
+
+NOTA: con splice también podemos extraer los elementos del array
+
+- Copiar un Array:
+
+ej.
+let copiaArray = frutas.slice()
+
+- Every:
+
+El método every ejecuta una función callback dada una vez por cada elemento presente en el arreglo hasta encontrar uno quee haga retornar un valor falso.
+
+Es llamada con tres argumentos: el valor del elemento, el índice del elemento y el objeto Array a recorrer.
+
+Se verifican que todos los elementos satisfagan la condición.
+
+ej.
+function esGrande(elemento, indice, arrreglo) {
+
+	return elemento >= 10;
+}
+
+[12, 5, 8, 130, 44].every(esGrande); // false
+
+[12, 54, 18, 130, 44].every(esGrande); // true
+
+- Funciones flechas:
+
+Forma de acortar la sintaxis de las funciones
+
+ej.
+[12, 5, 8, 130, 44].every(elem => elem >= 10); // false
+
+[12, 54, 18, 130, 44].every(elem => elem >= 10); // true
+
+- Filters:
+
+Llama a la función callback sobre cada elemento del array y construye uno nuevo con todos los valores para los cuales callback devuelve un valor verdadero.
+
+Se invoca con tres argumentos: el valor de cada elemento, el índice del elemento y el objeto Array a recorrer.
+
+ej.
+function esGrande(elemento) {
+
+	return elemento >= 10;
+}
+
+var filtrados = [12, 5, 8, 130, 44].filter(esGrande);
+
+// filtrados es [12, 130, 44]
+
+- Some:
+
+some() ejecuta la función callback una vez por cada elemento presente en el Array hasta que encuentre uno donde callback retorna true.
+
+callback es invocada con tres argumentos: el valor del elemento, el índice del elemento y el objeto array a recorrer.
+
+ej.
+function masquediez(element, index, array) {
+
+	return element > 10;
+}
+
+[2, 5, 8, 1, 4].some(masquediez); // false
+
+[12, 5, 8, 1, 4].some(masquediez); // true
+
+-- Funciones --
+
+Es un bloque de código que podemos invocar todas las veces que necesitemos.
+
+Las funciones siempre devuelven un valor, pero un procedimiento puede o no devolver un valor.
+
+- Estructura básica de una función:
+
+Se componen de un nombre, los parámetros (opcional), cuerpo y  retorno (en el caso que devuelva algún valor).
+
+ej.
+function sumar (a, b){
+	return a+b;
+}
+
+- Funciones declarativas:
+
+Son aquellas que se declaran usando la estructura básica.
+
+- Funciones expresivas:
+
+En la expresión de función, la declaración se inicia con la palabra reservada var, donde generará una variable que guardará una función anónima.
+
+ej.
+var nombre = function mostrarEdad(edad){
+	return edad;
+}
+
+-- Arrows Functions --
+
+Es una alternativa compacta a una expresión de función tradicional.
+
+- Comparación de funciones tradicionales con funciones flecha:
+
+ej.
+// Función tradicional
+
+function (a){
+
+	return a + 100;
+}
+
+// Función flecha
+
+a => a + 100;
+
+ej.
+// Función tradicional
+
+function (a, b){
+
+return a + b + 100;
+
+}
+
+// Función flecha
+
+(a, b) => a + b + 100;
+
+ej.
+// Función tradicional (sin argumentos)
+
+function (){
+
+return a + b + 100;
+
+}
+
+// Función flecha (sin argumentos)
+
+() => a + b + 100;
+
+NOTA: Si el cuerpo requiere líneas de procesamiento adicionales, tenés que volver a introducir los corchetes más el return.
+
+ej.
+// Función tradicional
+
+function (a, b){
+
+let edad = 42;
+
+return a + b + edad;
+
+}
+
+// Función flecha
+
+(a, b) => {
+
+let edad = 42;
+
+return a + b + edad;
+
+}
+
+NOTA: En las funciones con nombre tratamos las expresiones de flecha como variables
+
+ej.
+// Función tradicional
+
+function suma (a){
+
+return a + 100;
+
+} 
+
+// Función flecha
+
+let suma = a => a + 100;
+
+- Sintaxis básica:
+
+Un parámetro. Con una expresión simpre no se necesita return:
+
+param => expression
+
+Varios parámetro requieren paréntesis:
+
+(param1, paramN) => expression
+
+Las declaraciones de varias líneas requieren corchetes y return:
+
+param => {
+
+let a = 1;
+
+return a + b;
+
+}
+
+Varios parámetros requieren paréntesis. Las declaraciones de varias líneas requieren corchetes y return:
+
+(param1, paramN) => {
+
+let a = 1;
+
+return a + b;
+
+}
+
+- This y funciones flechas:
+
+This se refiere a la instancia. Las instancias se crean cuando se invoca la palabra clave new. De lo contrario, this seestablecerá, de forma predeterminada, en el ámbito o alcance window.
+
+Las funciones flecha no predeterminan this al ámbito o alcance de window, mas bien ejecutan en el ámbito o alcance en que se crean.
+
+- call, apply y bind:
+
+Fueron diseñados para permitir que los métodos se ejecuten dentro de diferentes ámbitos.
+
+ej.
+var add = function (a, b, c) {
+
+return this.num + a + b + c;
+
+}
+
+// call
+
+var result = add.call(obj, 1, 2, 3) // establece el ámbito como "obj"
+
+console.log(result) // resultado 106
+
+// apply
+
+const arr = [1, 2, 3]
+
+var result = add.apply(obj, arr) // establece el ámbito como "obj"
+
+console.log(result) // resultado 106
+
+// bind
+
+var result = add.bind(obj) // estable el ámbito como "obj"
+
+console.log(result(1, 2, 3)) // resultado 106
+
+Con las funciones flecha, dado que la función add esencialmente se crea en el ámbito del window (global), asumirá que this es window.
+
+- Uso del operador new:
+
+Las funciones flecha no se pueden usar como constructores y arrojarán un error cuando se usen con new.
+
+- Cuerpo de funcion:
+
+Las funciones flecha pueden tener un "cuerpo conciso" o el "cuerpo de bloque" habitual.
+
+En un cuerpo conciso, sólo se especifica una expresión, que se convierte en el valor de retorno implícito. En el cuerpo de un bloque, debes utilizar una instrucción return explícita.
+
+ej.
+var func = x => x * x;
+
+// sintaxis de cuerpo conciso, "return" implícito.
+
+var func = (x, y) => { return x + y; };
+
+// con cuerpo de bloque, se necesita un "return" explícito.
+
+- Orden de procesamiento:
+
+Las funciones flecha tienen reglas de procesamiento especiales que interactúan de manera diferente con prioridad de operadores en comparación con las funciones regulares.
+
+ej.
+let callback;
+
+callback = callback || function() {}; // ok
+
+callback = callback || () => {};
+
+// SyntaxError: argumentos de función flecha no válidos
+
+ej.
+// Fácil filtrado de arreglos, mapeo, ...
+
+var arr = [5, 6, 13, 0, 1, 18, 23];
+
+var sum = arr.reduce((a, b) => a + b);
+
+// 66
+
+-- Scope --
+
+Se refiere al contexto actual de ejecución. El contexto en el que los valores y las expresiones son visibles o pueden ser referenciados.
+
+ej.
+function exampleFunction() {
+
+	var x = "declarada dentro de la función"; // x solo se puede utilizar en exampleFunction
+
+	console.log("funcion interna");
+
+	console.log(x);
+
+}
+
+console.log(x); // error
+
+ej.
+var x = "función externa declarada";
+
+exampleFunction();
+
+function exampleFunction() {
+
+	console.log("funcion interna");
+
+	console.log(x);
+
+}
+
+console.log("funcion externa");
+
+console.log(x);
+
+-- Objetos en Javascript --
+
+Los objetos se definen delimitados mediante llaves {}.
+
+Un atributo se compone de una clave (key) y un valor (value), que se separán entre si por dos punto. Cada atributo está separado del siguiente por un coma.
+
+ej.
+var usuario {
+
+nombre: "carlos",
+
+apellido: "sanchez",
+
+edad: 25,
+
+programador: true
+
+}
+
+- Llamado de atributos:
+
+ej.
+console.log(usuario.nombre);
+
+console.log(usuario.apellido);
+
+console.log(usuario.edad);
+
+console.log(usuario.programador);
+
+-- Callback --
+
+Una función callback es una función que se pasa a otra función como argumento.
+
+ej.
+function saludar(nombre) {// ?-- definición de la función
+
+alert('Hola ' + nombre);
+
+}
+
+function procesarEntradaUsuario(callback) {
+
+var nombre = prompt('Por favor ingresa tu nombre.');
+
+callback(nombre);
+
+}
+
+procesarEntradaUsuario(saludar);// ?-- función pasada como parámetro
+
+-- Closures (clausura) --
+
+Es una función que guarda referencias del estado adyacente, permite acceder al ámbito de una función exterior desde una función interior. Éstas se crean cada vez que una función es creada.
+
+ej.
+function iniciar() {
+
+	var nombre = "internet"; // La variable nombre es una variable local creada por iniciar.
+
+	function mostrarNombre() { // La función mostrarNombre es una función interna, una clausura.
+
+		alert(nombre); // Usa una variable declarada en la función externa.
+
+	}
+
+	mostrarNombre();
+
+}
+
+iniciar(); 
+
+ej.
+function creaSumador(x) {
+
+	return function(y) {
+
+		return x + y;
+
+	}
+
+}
+
+var suma5 = creaSumador(5);
+
+var suma10 = creaSumador(10);
+
+console.log(suma5(2)); // muestra 7
+
+console.log(suma10(2)); // muestra 12
+
+Ejemplos más prácticos:
+
+.Botones interactivos para cambiar el tamaño de la letra:
+
+ej.
+function makeSizer(size) {
+
+	return function() {
+
+	document.body.style.fontSize = size + 'px';
+
+	};
+
+}
+
+var size12 = makeSizer(12);
+
+var size14 = makeSizer(14);
+
+var size16 = makeSizer(16);
+
+- Emular métodos privados con Closures:
+
+ej.
+var Counter = (function() {
+
+var privateCounter = 0;
+
+function changeBy(val) {
+
+privateCounter += val;
+
+}
+
+return {
+
+increment: function() {
+
+changeBy(1);
+
+},
+
+decrement: function() {
+
+changeBy(-1);
+
+},
+
+value: function() {
+
+return privateCounter;
+
+}
+
+}
+
+})();
+
+ 
+
+alert(Counter.value()); /* Muestra 0 */
+
+Counter.increment();
+
+Counter.increment();
+
+alert(Counter.value()); /* Muestra 2 */
+
+Counter.decrement();
+
+alert(Counter.value()); /* Muestra 1 */
+
+En los ejemplos anteriores cada closure ha tenido su propio entorno; aquí creamos un único entorno compartido por tres funciones: Counter.increment, Counter.decrement y Counter.value.
+
+El entorno compartido se crea en el cuerpo de una función anónima, que se ejecuta en el momento que se define. El entorno contiene dos elementos privados: una variable llamada privateCounter y una función llamada changeBy. No se puede acceder a ninguno de estos elementos privados directamente desde fuera de la función anónima. Se accede a ellos por las tres funciones públicas que se devuelven desde el contenedor anónimo.
+
+Los closures favorecen la encapsulación y la ocultación de datos.
+
+-- Objeto String --
+
+- Crear String:
+
+ej.
+const string = "Una cadena primitiva";
+
+const objetoString = new String("Un objeto String");
+
+Las string primitivas y los objetos string se pueden usar indistintamente en la mayoría de las situaciones.
+
+- Acceder a un caracter:
+
+ej.
+return 'cat'.charAt(1) // devuelve "a"
+
+return 'cat'[1] // devuelve "a"
+
+- Comparar cadenas:
+
+ej.
+let a = 'a'
+
+let b = 'b'
+
+if (a < b) { // true
+
+	console.log(a + ' es menor que ' + b)
+
+} else if (a > b) {
+
+	console.log(a + ' es mayor que ' + b)
+
+} else {
+
+	console.log(a + ' y ' + b + ' son iguales.')
+
+}
+
+- Concatenar strings:
+
+ej.
+let longString = "Esta es una cadena muy larga que necesita " +
+
+"que dividimos en varias líneas porque " +
+
+"de lo contrario, mi código es ilegible."
+
+
+
+let longString = "Esta es una cadena muy larga que necesita \
+
+que dividimos en varias líneas porque \
+
+de lo contrario, mi código es ilegible."
+
+-- Reduce -- 
+
+reduce() va a tomar una variable que va a estar iterándose a lo largo de un arreglo y las operaciones que vaya haciendo se van a ir acumulando en un acumulador. Nos devuelve un valor único
+
+reduce toma cuatro argumentos: valorAnterior, valorActual, indiceActual y array.
+
+ej.
+[0,1,2,3,4].reduce(function(valorAnterior, valorActual, indice, vector){
+
+	return valorAnterior + valorActual; 
+
+}); // Valor Devuelto: 10
+
+Para inicializar el contador en algún número se expresa de la siguiente manera:
+
+ej.
+[0,1,2,3,4].reduce(function(valorAnterior, valorActual, indice, vector){
+
+	return valorAnterior + valorActual;
+
+}, 10); // Valor Devuelto: 20
+
+-- Map --
+
+map() llama a la función callback provista una vez por elemento de un array, en orden, y construye un nuevo array con los resultados.
+
+callback es llamada con tres argumentos: el valor del elemento, el índice del elemento, y el objeto array que se está recorriendo.
+
+ej.
+var numeros= [1, 4, 9];
+
+var raices = numeros.map(Math.sqrt);
+
+// raices tiene [1, 2, 3]
+
+// numeros aún mantiene [1, 4, 9]
+
+-- DOM --
+
+El document object model (DOM) es una interfaz de programación para los documentos HTML y XML. Da una representación del documento como un grupo de nodos y objetos estructurados que tienen propiedades y métodos. Conecta las páginas web scripts o lengujes de programación.
+
+- DOM y Javascript:
+
+Cada elemento del HTML es parte del DOM para cada documento, así se puede acceder y manipularlos utilizando el DOM y un lenguaje de escritura, como JS.
+
+- Tipos de datos importantes:
+
+document:
+
+Es la raíz del objeto en sí mismo.
+
+element:
+
+Se refiere a un elemento o a un nodo de tipo de elemento "element" devuelto por un miembro del API de DOM.
+
+nodeList:
+
+Es una serie de elementos. Se accede a los ítems de las siguientes formas: list.item(1) o lista[1]
+
+ej.
+document.getElementsByTagName()
+
+attribute:
+
+Es una referencia a un objeto que expone una interfaz particular a los atributos.
+
+ej.
+createAttribute()
+
+NamedNodeMap:
+
+Es una serie, pero los ítem son accesibles tanto por el nombre o por un índice.
+
+- Interfaces y objetos:
+
+ej.
+var table = document.getElementById("table");
+
+var tableAttrs = table.attributes; // Node/interfaz Element
+
+for (var i = 0; i < tableAttrs.length; i++) {
+
+	// interfaz HTMLTableElement: atributo border
+
+	if(tableAttrs[i].nodeName.toLowerCase() == "border")
+
+	table.border = "1";
+
+}
+
+// interfaz HTMLTableElement: atributo summary
+
+table.summary = "nota: borde aumentado";
+
+- Interfaces esenciales en DOM:
+
+document.getElementById(id)
+
+element.getElementsByTagName(name)
+
+document.createElement(name)
+
+parentNode.appendChild(node)
+
+element.innerHTML
+
+element.style.left
+
+element.setAttribute
+
+element.element.getAttribute
+
+element.addEventListener
+
+window.content
+
+window.onload
+
+window.dump
+
+window.scrollTo
+
+-- Eventos --
+
+ej.
+var divs = document.querySelectorAll('div');
+
+ 
+
+for (var i = 0; i < divs.length; i++) {
+
+	divs[i].onclick = function(e) {
+
+		e.target.style.backgroundColor = bgChange();
+
+	}
+
+}
+
+Listener: Es una función que nos permite escuchar un evento.
+
+Handler: Código que ejecutamos cuando se detecta un evento.
+
+Hay tres formas de definir los Listeners:
+
+.Definirlo en el HTML (mala práctica).
+.Hacerlo todo desde el código de Javascript (No puede asociar varios Eventos a un elemento).
+.addEventListener (recomendada, me permite varios Eventos a un elemento).
+
+- addEventListener:
+
+El addEventListener recibe dos parámetros: el nombre del evento y la función a ejecutar (Handler)
+
+ej.
+function clickTitulo(ev) {
+	console.log("Hola mundo")
+}
+
+const titulo = document.getElementById("tituloForm")
+
+titulo.addEventListener("click", clickTitulo)
+
+- removeEventListener:
+
+El removeEventListener recibe el Evento a eliminar y el elemento al cual está asociado ese Listener.
+
+ej.
+titulo.removeEventListener("click", clickTitulo)
+
+- Handler:
+
+El Handler siempre va a recibir como parámetro el evento.
+
+ej.
+function holaMundo(ev){
+	console.log("Hola mundo")
+}
+
+- Eventos:
+
+Los Eventos más comunes en páginas web son:
+
+.DomContentLoaded: Que me indica que el DOM ya cargó.
+
+Formularios:
+
+El evento event.preventDefault() lo que va a hacer es que va a prevenir el comportamiento por defecto que tiene un evento ej. el evento submit
+
+Para acceder a los valores de los inputs del form se utiliza event.target.nombreInput.value ej. event.target.name.value
+
+ej básico de formulario.
+const form = document.getElementById("#form")
+
+const enviarFormulario = (event) => {
+	event.preventDefault()
+
+	cont {name, email, password} = event.targe
+
+	console.log(name.value, email.value, password.value)
+
+	if (name.length == 0) alert("El nombre no es válido")
+}
+
+form.addEventListener("submit", enviarFormulario)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
